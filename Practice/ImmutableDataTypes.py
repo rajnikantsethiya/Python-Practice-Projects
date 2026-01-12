@@ -63,5 +63,9 @@ for i in range(len(a)):
 
 
 # Frozen sets
+# This is similar to an Object.freeze() in js
+c = frozenset({"indore", "mumbai", "pune"})
+print(c)
+print(c.union(a))
 
 
