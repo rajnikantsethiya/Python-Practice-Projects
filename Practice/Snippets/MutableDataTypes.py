@@ -18,6 +18,9 @@ x.reverse()
 print(x)
 x.sort()
 print(x)
+x = [1,2,3,4,5,5,5,6,7,7]
+listComprehention = [i for i in x if i > 3 in x]
+print(f"List comprehention example:{listComprehention}")
 #Set
 # Set is a collection of unique elements, 
 # which order is not fixed. If we have 2 sets, we can check the union(all elements), intersection(common elements)
