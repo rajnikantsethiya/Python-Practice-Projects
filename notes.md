@@ -92,4 +92,48 @@
 - update() Updates the dictionary with the specified key-value pairs
 - values() Returns a list of all the values in the dictionary
 
-##
+## Functions
+
+- Functions works in same way as every other language uses, like avoiding the repetition, defining wit "def". can have named and anonymous (lambda) functions
+- function has 4 type of scope
+  - Local - Inside the current function
+  - Enclosing - Inside enclosing functions (from inner to outer)
+  - Global - At the top level of the module
+  - Built-in - In Python's built-in namespace
+- functions have different type of arguments
+  - positioned arguments
+  - named arguments
+  - keyword arguments
+  - dictionary arguments
+- For positioned-only arguments use , /
+- For keyword only arguments use \*, should use before the arguments
+
+  By using above syntax in function porameters, it ll throw error if we send other type or args.
+
+- When not sure on the function parameter, use \* with varible for positioned args and \*\* for key-pair args.
+- with \* you'll receive a tuple of args
+- with \*\* you'll receive a dict of args
+- Example of combinations - def Main(title, \*skills, \*\*hobbies)
+  - title is a named args
+  - skills would be a tuple
+  - hobbies would be a dict
+- Function decorators are used to decorate the actual function
+  def Main(func):
+  def inner():
+  return(func())
+  return inner
+
+  @Main ## this is a decorator here
+  def sub():
+  return("This is a sub function")
+
+- This can be used with input params as well
+- To functions body, there are 2 methods, **name**, **doc**
+  - name gives the functions name, for decorator it doesnt return the original function name, hence to fix this use built-in method functools.wraps(func)
+  - doc gives the documentation availabe in the functions. ideallt defined with """ and at the top of the function.
+- lambda is the anonymous functions which can be used for short span of time.
+  - mostly used with map, filter, sort or iteratable options
+  - lambda x: x+1
+  - with map - list(map(lambda x:x+1, iterable_list))
+- Recursion function can be used for recursive operations, default limit is 1000, to increase use sys.getRecursionLimit(num)
+- Recursive function has 2 things, base case and recursive case.
