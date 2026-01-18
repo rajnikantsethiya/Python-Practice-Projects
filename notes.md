@@ -137,3 +137,8 @@
   - with map - list(map(lambda x:x+1, iterable_list))
 - Recursion function can be used for recursive operations, default limit is 1000, to increase use sys.getRecursionLimit(num)
 - Recursive function has 2 things, base case and recursive case.
+
+## Comprehension
+
+- Compresions are used as an additional methods which can be used to solve the problems with efficient code and single line solution
+- it uses for loop under the hood nothing fancy or buit-in methods are also supported
