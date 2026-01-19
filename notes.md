@@ -142,3 +142,9 @@
 
 - Compresions are used as an additional methods which can be used to solve the problems with efficient code and single line solution
 - it uses for loop under the hood nothing fancy or buit-in methods are also supported
+
+## Generators
+
+- Generators are normal functions which can return of accept values but it has a special quality of resuming back the function execution where it left off.
+- yield is reserved keywork which is used for returning values or accepting values.
+- Generator can return, accept or reference value from other generators
