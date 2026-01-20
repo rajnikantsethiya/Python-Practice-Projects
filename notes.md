@@ -148,3 +148,19 @@
 - Generators are normal functions which can return of accept values but it has a special quality of resuming back the function execution where it left off.
 - yield is reserved keywork which is used for returning values or accepting values.
 - Generator can return, accept or reference value from other generators
+
+## OOP / Classes
+
+- Object oriented programming is always about classes and objects only
+- In python mostly everything is an Object, even the class in python is object constructor
+- it follows oop concepts like same as other programming languages.
+- An Object or Instance of an class is an copy of its blueprint which is Class.
+  # Namespace
+  When a varibale value is changed on instance, if affeces only the context which could be Object/instance of class. Class context will remain as is. This is called as Namespaces which keeps the context as namespace.
+  # Shadowing
+  When a variable is modified or deleted in object's context, It doesnt impact the class and when the deleted varibale is accessed, it provided the value of class's context. This is called shadowing of variables.
+  If the deleted variable was created in Object's context, it will throw an error.
+  # Constructor (**init**)
+  - In python, **init** function is called as constructor which can be called explicitly or it will be called internally if not called explicitly
+  - This constructor function takes care of handling the input parameters and keeping them as a blueprint reference for internal methods.
+  -
