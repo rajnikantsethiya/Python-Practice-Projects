@@ -163,4 +163,9 @@
   # Constructor (**init**)
   - In python, **init** function is called as constructor which can be called explicitly or it will be called internally if not called explicitly
   - This constructor function takes care of handling the input parameters and keeping them as a blueprint reference for internal methods.
-  -
+  # Inheritance and Composition
+  - Inheritance is a way of accessing the properties and attributes of base class in a new class. which helps in reducing the redundant codebase and can re use the existing base class methods and other things.
+  - Nested inheritance is possible to any extent, there is no limit on this.
+  - For inheriting the class to another class, just pass the classname to other class where it need to be inherited.
+  - class Main() -> class Extend(Main) - Its done !
+  - Composition is another way of inheriting classes, The major difference from the traditional inheritance is it just holds the reference of the base class instead creating a object or creating instance of the base class. This helps in memory effifciently as the base class is not executed in it. It ll be executed later in the class once its instance is created.
