@@ -13,9 +13,9 @@ class CreatePortrait(PaintBase):
 p2 = CreatePortrait('Red')
 p2.create()
 
-class BlowAir:
+class BlowAir(PaintBase):
     portrait = CreatePortrait
 
-B1 = BlowAir()
-B1.portrait('Green').create()
+B1 = BlowAir('Sea')
+B1.portrait('blue').create()
 B1.portrait('Green').varnish()

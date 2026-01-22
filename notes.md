@@ -169,3 +169,6 @@
   - For inheriting the class to another class, just pass the classname to other class where it need to be inherited.
   - class Main() -> class Extend(Main) - Its done !
   - Composition is another way of inheriting classes, The major difference from the traditional inheritance is it just holds the reference of the base class instead creating a object or creating instance of the base class. This helps in memory effifciently as the base class is not executed in it. It ll be executed later in the class once its instance is created.
+  - Base class can be accessed explicitly or with Super keyword
+  - MRO (Method resolution order is used to multiple inehritance)
+  - Multiple inheritance can be identied by the inherited classes order
