@@ -172,3 +172,5 @@
   - Base class can be accessed explicitly or with Super keyword
   - MRO (Method resolution order is used to multiple inehritance)
   - Multiple inheritance can be identied by the inherited classes order
+  - Static methods and Class methods are built in decorators designed to extend the constructor.
+  - These decorators doesnt have access to Self in class and Classmethod would have cls access which is a class reference so that it can access and extend
