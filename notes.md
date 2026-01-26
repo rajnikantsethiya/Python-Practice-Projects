@@ -155,22 +155,39 @@
 - In python mostly everything is an Object, even the class in python is object constructor
 - it follows oop concepts like same as other programming languages.
 - An Object or Instance of an class is an copy of its blueprint which is Class.
+
   # Namespace
+
   When a varibale value is changed on instance, if affeces only the context which could be Object/instance of class. Class context will remain as is. This is called as Namespaces which keeps the context as namespace.
+
   # Shadowing
+
   When a variable is modified or deleted in object's context, It doesnt impact the class and when the deleted varibale is accessed, it provided the value of class's context. This is called shadowing of variables.
   If the deleted variable was created in Object's context, it will throw an error.
+
   # Constructor (**init**)
+
   - In python, **init** function is called as constructor which can be called explicitly or it will be called internally if not called explicitly
   - This constructor function takes care of handling the input parameters and keeping them as a blueprint reference for internal methods.
+
   # Inheritance and Composition
+
   - Inheritance is a way of accessing the properties and attributes of base class in a new class. which helps in reducing the redundant codebase and can re use the existing base class methods and other things.
   - Nested inheritance is possible to any extent, there is no limit on this.
   - For inheriting the class to another class, just pass the classname to other class where it need to be inherited.
   - class Main() -> class Extend(Main) - Its done !
   - Composition is another way of inheriting classes, The major difference from the traditional inheritance is it just holds the reference of the base class instead creating a object or creating instance of the base class. This helps in memory effifciently as the base class is not executed in it. It ll be executed later in the class once its instance is created.
   - Base class can be accessed explicitly or with Super keyword
+  - When a constructor is created in child class, it no longer inherits the base class property until the Super is added in child class constructor.
   - MRO (Method resolution order is used to multiple inehritance)
   - Multiple inheritance can be identied by the inherited classes order
   - Static methods and Class methods are built in decorators designed to extend the constructor.
   - These decorators doesnt have access to Self in class and Classmethod would have cls access which is a class reference so that it can access and extend
+
+  # Encapsulation with private properties and methods
+
+  - Encapsulation means hiding data from outside world.
+  - Hiding comes when we want to keep somwething private or protected. hence We can achive this by creating private methods and properties.
+  - We can use \_\_ for creating private properties and methods, this would need a getter and setter for using outside the class.
+  - Private methods can only be accessed and used inside the class.
+  - We can use \_ for protected properties, this tells developer that this is for internal use , can access directly with an \_ but not recommened.
