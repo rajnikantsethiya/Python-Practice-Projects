@@ -191,3 +191,9 @@
   - We can use \_\_ for creating private properties and methods, this would need a getter and setter for using outside the class.
   - Private methods can only be accessed and used inside the class.
   - We can use \_ for protected properties, this tells developer that this is for internal use , can access directly with an \_ but not recommened.
+
+  # Exception handling
+
+  - This just like try catch but in python we have 4 things.
+    - try..except..else..finally
+  - you can define and raise multiple exceptions, these can be stored in a separate file and use them like util method.
