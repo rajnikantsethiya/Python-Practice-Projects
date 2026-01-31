@@ -197,3 +197,4 @@
   - This just like try catch but in python we have 4 things.
     - try..except..else..finally
   - you can define and raise multiple exceptions, these can be stored in a separate file and use them like util method.
+  - We can create own exceptions as well as utils and use them.
