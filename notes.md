@@ -199,7 +199,11 @@
   - you can define and raise multiple exceptions, these can be stored in a separate file and use them like util method.
   - We can create own exceptions as well as utils and use them.
 
-  # Concurrency and Parallelism
+  # Concurrency (Threading) and Parallelism(Multiprocessing)
 
-  - When multiple tasks works in parallel, and the start time is same is called Parallelism
+  - When multiple tasks works in parallel or assigned each tasks to a core (Process) and the start time is same is called Parallelism
   - Concurrecy is working on a fashion where one tasks gets end and other one starts off, with the same thread.
+  - DIFFERENCE: Threading works with only single Process and creates miltiple threads for tasks. Multiprocessing works with multiple Processes and creates multiple processes for tasks
+  - COMMON: When the program starts, it could be threading or multiprocessing, The result will be processes in once which means if 1 thread/process completes the tasks early, it needs to wait for other to get completed. This is all because we Join them using join() method
+  - GIL (Global Interpreter Lock) This is a Mutex lock which locks a memory when its accessed. If multiple threads or processes tries to access same memory location at the same lock, This lock blocks the other threads and waits until the current one finishes execution.
+  - Time consumed by the threads is ~2x compared to multiprocessing due to GIL & concurrency. Wherein Process makes it faster.
