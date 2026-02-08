@@ -1,3 +1,5 @@
+## CANVAS LINK : https://app.eraser.io/workspace/Bu51hbNUNdujGWiYK5Qi?origin=share
+
 ## There are four collection data types in the Python programming language:
 
 - List is a collection which is ordered and changeable. Allows duplicate members.
@@ -201,9 +203,15 @@
 
   # Concurrency (Threading) and Parallelism(Multiprocessing)
 
+  - Explanation Diagram ![alt text](image.png)
   - When multiple tasks works in parallel or assigned each tasks to a core (Process) and the start time is same is called Parallelism
-  - Concurrecy is working on a fashion where one tasks gets end and other one starts off, with the same thread.
+  - Concurrecy is working on a fashion where one tasks gets end and other one starts off, with the same thread.It basically context switching between the threads for shared memory.
   - DIFFERENCE: Threading works with only single Process and creates miltiple threads for tasks. Multiprocessing works with multiple Processes and creates multiple processes for tasks
-  - COMMON: When the program starts, it could be threading or multiprocessing, The result will be processes in once which means if 1 thread/process completes the tasks early, it needs to wait for other to get completed. This is all because we Join them using join() method
-  - GIL (Global Interpreter Lock) This is a Mutex lock which locks a memory when its accessed. If multiple threads or processes tries to access same memory location at the same lock, This lock blocks the other threads and waits until the current one finishes execution.
-  - Time consumed by the threads is ~2x compared to multiprocessing due to GIL & concurrency. Wherein Process makes it faster.
+  - Threading and multiprocessing has a common thing in nature, which is Join() method. This method ensures that all the tasks gets results back at the same time. Even If 1st tasks is faster than the last one, the result would come all along.
+  - GIL (Global Interpreter Lock) This is a Mutex lock which locks a memory when its accessed. When multiple threads tries to access same memory location at the same time, This lock blocks the other threads and waits until the current one finishes execution.
+  - Heirarchy is like this :
+    PROCESS -> THREADS (GIL)
+    Which means, There is single GIL within a process.
+  - BEST USE:
+    - THREADS: This is best for shared memory like I/O bound tasks(network requests, disk read/write) where CPU wait for input/output tasks to complete. GIL doesnt block much.
+    - MULTI-PROCESSES: This is best for CPU Bound tasks where heavy computation is required. using this makes the things faster as this creates multiple processes which can handle things independently. As this uses separate memories for separate processes, GIL doesnt bother.
