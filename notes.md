@@ -215,3 +215,12 @@
   - BEST USE:
     - THREADS: This is best for shared memory like I/O bound tasks(network requests, disk read/write) where CPU wait for input/output tasks to complete. GIL doesnt block much.
     - MULTI-PROCESSES: This is best for CPU Bound tasks where heavy computation is required. using this makes the things faster as this creates multiple processes which can handle things independently. As this uses separate memories for separate processes, GIL doesnt bother.
+
+## Asyncio
+
+- Comparison Table
+  Feature | ThreadPoolExecutor | ProcessPoolExecutor
+  Best for | I/O (API calls, slow databases) | CPU (Math, Encryption, Image processing)
+  Bypasses GIL? | No | Yes
+  Memory | Shared (Low memory usage) | Separate (Higher memory usage)
+  Overhead | Fast to start | Slower to start (spawning processes is heavy)
