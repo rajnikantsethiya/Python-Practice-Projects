@@ -224,3 +224,20 @@
   Bypasses GIL? | No | Yes
   Memory | Shared (Low memory usage) | Separate (Higher memory usage)
   Overhead | Fast to start | Slower to start (spawning processes is heavy)
+
+## Pydantic
+
+- Pydantic is used for data validation and strict type checking.
+- Pydantic convers the data types implicitly if possible, else throws error.
+- Pydantic v2 is written in Rust which makes it best in performance.
+- Pydantic has lot of options for validation including the Field, Field validator, modelvalidator
+- Pydantic can help in creating multiple models which can be used like self referencing, nested models, advance nested models which creates hierarchy of models.
+- Good practices
+  - Define leaf models first who has mininal dependency
+  - Build upward and include complex models gradually.
+  - can create field validation for every field
+  - can validate the complete model using modes
+  - try to reduce deep nested or cicular references to avoid memory leakages
+  - Great place to validate business rules
+
+
