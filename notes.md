@@ -240,4 +240,12 @@
   - try to reduce deep nested or cicular references to avoid memory leakages
   - Great place to validate business rules
 
+## What is LLM or GPT?
+
+- Generative Pre-Trained transformer.
+- Generative meaning it ll generate based on the data
+- Data would be part of Pre trained sample data on which model will be trained
+- Transformer is the part where output will be formed based on the tokens generated and picks best using probability.
+- GPT Architecture - ![alt text](image-1.png)
+
 
