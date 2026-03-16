@@ -248,4 +248,15 @@
 - Transformer is the part where output will be formed based on the tokens generated and picks best using probability.
 - GPT Architecture - ![alt text](image-1.png)
 
+## Tokenization
 
+- This is a process of generating tokens from a input.
+- This process generats token and preducts the next tokens what could be.
+- Using tentoken library we can generate token from an input and vice versa.
+
+## How GPT works?
+
+- Input will be convered into tokens
+- Token will be saved in vector embeddings
+- Vector embedding needs Position encoding to understand the postion of tokens.
+- Multi head attention will come in picture which will tell about the multiple things or aspect based on the input.
